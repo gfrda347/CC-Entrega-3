@@ -162,9 +162,10 @@ class LiquidacionApp(App):
 
             resultado_text = f"Indemnización: {indemnizacion}\nVacaciones: {vacaciones}\nCesantías: {cesantias}\nIntereses sobre cesantías: {intereses_cesantias}\nPrima de servicios: {primas}\nRetención en la fuente: {retencion_fuente}\nTotal a pagar: {total_pagar}"
             self.resultados_screen.mostrar_resultados(resultado_text)
-            self.screen_manager.current = "resultados"  # Se hace el cambio de pantalla a donde estan los resultados
+            self.screen_manager.current = "resultados"  # Se hace el cambio de pantalla a donde están los resultados
         except Exception as e:
             print("Error durante el cálculo:", e)
+
 
     def on_start(self):
         self.root_window.title = "Bienvenido a la Calculadora Definitiva"
