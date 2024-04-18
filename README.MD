@@ -28,6 +28,10 @@ arduino
 Copy code
 python -m unittest discover ..\tests -p '*test*.py'
 
+Para ejecutar a interfaz grafica, tener instalado kivy.
+Para instalar kivy ejecuete el siguiente comando
+pip install [kivy_base]
+
 ## ¿Cómo está hecho?
 
 El proyecto sigue una estructura organizativa que promueve prácticas de Clean Code. A continuación se detalla la arquitectura del proyecto, bibliotecas utilizadas y la organización de los módulos:
